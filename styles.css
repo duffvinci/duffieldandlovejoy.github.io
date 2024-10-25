@@ -372,6 +372,21 @@ ul li {
   /* Space between list items */
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  
+  .contact-info {
+    padding-right: 0;
+  }
+  
+  .list-container {
+    margin-top: 20px;
+  }
+}
+
 
 
 
@@ -419,18 +434,31 @@ ul li {
   header {
     min-height: 300px;
   }
-
   .flex-container {
     flex-direction: column;
-    /* Stack items on smaller screens */
+    align-items: center; /* Center everything horizontally */
+    padding: 10px;
+  }
+
+  .contact-section {
+    flex-direction: column;
     align-items: center;
-    /* Center align content */
+    text-align: center; /* Center text within the section */
   }
 
   .contact-info {
     padding-right: 0;
-    /* Remove right padding on smaller screens */
+    padding-bottom: 20px;
   }
+
+  .list-container {
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 0; /* Remove indentation for centered list */
+  }
+  
 }
 
 @media (max-width: 480px) {
