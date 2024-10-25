@@ -147,20 +147,22 @@ header p {
 }
 
 /* Call-to-Action Section */
-.call-to-action {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px;
-  text-align: center;
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 15px;
+  background-color: var(--primary-color); /* Uses primary color */
+  color: #fff;
+  text-decoration: none;
   border-radius: 5px;
-  margin: 20px auto;
-  max-width: 600px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.call-to-action:hover {
-  background-color: #004a90;
+.cta-button:hover {
+  background-color: var(--secondary-color); /* Uses secondary color for hover */
 }
-
 /* Team Section */
 .team {
   display: flex;
