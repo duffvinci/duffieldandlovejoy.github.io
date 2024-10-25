@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --primary-color: #266298; /* Primary color */
-  --secondary-color: #1f4e7a; /* Secondary color */
-  --background-color: #f4f4f4; /* Background color */
+  --primary-color: #266298;
+  /* Primary color */
+  --secondary-color: #1f4e7a;
+  /* Secondary color */
+  --background-color: #f4f4f4;
+  /* Background color */
 }
 
 /* General Styles */
@@ -12,8 +15,11 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #ffffff, #f0f4f8); /* Subtle gradient background */
-  color: #555; /* Adjusted text color for better readability */
+  background-color: #f9f9f9;
+  /* Light background for the contact section */
+
+  color: #555;
+  /* Adjusted text color for better readability */
 }
 
 /* Container */
@@ -32,8 +38,10 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: #eaeff2; /* Slightly darker navbar */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background-color: #f9f9f9;
+  /* Slightly darker navbar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
   position: sticky;
   top: 0;
   width: 100%;
@@ -45,13 +53,16 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 93px;
-  padding: 10px; /* Add padding to navbar for smaller screens */
+  padding: 10px;
+  /* Add padding to navbar for smaller screens */
 }
 
-.navbar .logo img {
+.logo img {
   margin-left: 20px;
   width: 93px;
 }
+
+
 
 .navbar .nav-links {
   margin-right: 20px;
@@ -151,7 +162,8 @@ header p {
   display: inline-block;
   padding: 12px 24px;
   margin-top: 15px;
-  background-color: var(--primary-color); /* Uses primary color */
+  background-color: var(--primary-color);
+  /* Uses primary color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -161,60 +173,93 @@ header p {
 }
 
 .cta-button:hover {
-  background-color: var(--secondary-color); /* Uses secondary color for hover */
+  background-color: var(--secondary-color);
+  /* Uses secondary color for hover */
 }
+
 /* Team Section */
 .team {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
-  
-  border-top: 1px solid #e0e0e0; /* Divider */
+
+  border-top: 1px solid #e0e0e0;
+  /* Divider */
 }
 
 .team-title {
-  text-align: center; /* Center the title */
-  margin-top: 40px; /* Add margin above the title */
-  margin-bottom: 40px; /* Space below the title */
+  text-align: center;
+  /* Center the title */
+  margin-top: 40px;
+  /* Add margin above the title */
+  margin-bottom: 40px;
+  /* Space below the title */
 }
 
 .team-title blockquote {
-  text-align: center; /* Center the quote */
-  margin: 20px 0 40px; /* Margin around the quote */
-  font-style: italic; /* Italicize the quote */
-  
-  padding-left: 20px; /* Space between the border and text */
-  color: #555; /* Change color to differentiate from other text */
+  text-align: center;
+  /* Center the quote */
+  margin: 20px 0 40px;
+  /* Margin around the quote */
+  font-style: italic;
+  /* Italicize the quote */
+
+  padding-left: 20px;
+  /* Space between the border and text */
+  color: #555;
+  /* Change color to differentiate from other text */
 }
 
 .team-title h2 {
-  font-family: "Tinos", serif; /* Use the same font as other headings */
-  font-size: 28px; /* Adjust size as needed */
-  margin: 0; /* Remove default margin */
+  font-family: "Tinos", serif;
+  /* Use the same font as other headings */
+  font-size: 28px;
+  /* Adjust size as needed */
+  margin: 0;
+  /* Remove default margin */
 }
+
 .member {
   text-align: center;
   width: 300px;
   padding: 20px;
   margin: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
-  border-radius: 5px;
-  background-color: #f1f5f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #ffffff, #f2f3f6);
+  /* Subtle gradient background */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for hover effect */
+}
+
+.member:hover {
+  background-color: #ffffff;
+  /* Slightly lighter shade for hover effect */
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .member img {
   width: auto;
   height: 350px;
   border-radius: 5px;
-  margin-bottom: 20px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+  /* Smooth zoom transition */
 }
 
 .member h3 {
-  font-family: "Merriweather", serif;
+
+  color: #266298;
+  /* Use primary color for headings */
   font-size: 24px;
-  margin-bottom: 10px;
-  color: #222; /* Darker heading color */
+  /* Set a larger font size */
+
+  font-family: "PT Serif", serif;
+  /* Use a serif font for a classic look */
+  text-transform: uppercase;
+  /* Uppercase for emphasis */
 }
 
 .member p {
@@ -231,10 +276,10 @@ a {
 
 /* Footer Styles */
 footer {
-  background-color: #f2f3f6;
+  background: linear-gradient(to top, #ffffff, #f0f4f8);
   color: #333;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
   bottom: 0;
@@ -254,6 +299,84 @@ footer {
   height: auto;
   margin-right: 20px;
 }
+
+/* Duffield page */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  /* Added padding for breathing space */
+}
+
+.contact-section {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+  /* Subtle gradient background */
+  border-radius: 8px;
+  /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
+  padding: 20px;
+  /* Add padding inside the section */
+}
+
+.contact-info {
+  flex: 1;
+  /* Allow this section to take up more space */
+  padding-right: 20px;
+  /* Add some spacing */
+}
+
+.list-container {
+  flex: 1;
+  /* Allow this section to take up more space */
+}
+
+.contact-info img {
+  max-width: 100%;
+  /* Responsive images */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+  /* Slightly rounded corners for images */
+}
+
+.contact-section h3 {
+  color: #266298;
+  /* Use primary color for headings */
+  font-size: 24px;
+  /* Set a larger font size */
+  margin-bottom: 15px;
+  /* Add space below the heading */
+  font-family: "PT Serif", serif;
+  /* Use a serif font for a classic look */
+  text-transform: uppercase;
+  /* Uppercase for emphasis */
+}
+
+ul {
+  list-style-type: disc;
+  /* Default bullet points */
+  padding-left: 20px;
+  /* Indent list items */
+  color: #555;
+  /* Color for the list text for better readability */
+  line-height: 1.6;
+  /* Improve spacing between list items */
+}
+
+ul li {
+  margin-bottom: 10px;
+  /* Space between list items */
+}
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -276,7 +399,8 @@ footer {
 
   .header-text h2 {
     font-size: 18px;
-    margin-bottom: 15%; /* Reduce margin for medium screens */
+    margin-bottom: 15%;
+    /* Reduce margin for medium screens */
   }
 
   header p {
@@ -291,8 +415,21 @@ footer {
   .contact-link {
     font-size: 16px;
   }
+
   header {
     min-height: 300px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    /* Stack items on smaller screens */
+    align-items: center;
+    /* Center align content */
+  }
+
+  .contact-info {
+    padding-right: 0;
+    /* Remove right padding on smaller screens */
   }
 }
 
@@ -301,15 +438,19 @@ footer {
     flex-direction: column;
     height: auto;
   }
+
   header {
     min-height: 300px;
   }
 
   .header-text h2 {
-    margin-bottom: 15%; /* Reduce margin for medium screens */
+    margin-bottom: 15%;
+    /* Reduce margin for medium screens */
   }
+
   .contact-link {
-    display: none; /* Hides the contact link on screens smaller than 768px */
+    display: none;
+    /* Hides the contact link on screens smaller than 768px */
   }
 
   .navbar .nav-links {
