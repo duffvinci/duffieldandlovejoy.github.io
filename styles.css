@@ -448,10 +448,11 @@ ul li {
     /* Reduce margin for medium screens */
   }
 
-  .contact-link {
+  /* Hides the contact link on screens smaller than 768px */
+  /* .contact-link {
     display: none;
-    /* Hides the contact link on screens smaller than 768px */
-  }
+    
+  } */
 
   .navbar .nav-links {
     margin-right: 0;
