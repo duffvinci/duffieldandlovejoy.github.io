@@ -89,7 +89,7 @@ header {
     url("images/office.png") no-repeat center center/cover;
   text-align: center;
   padding: 20px 20px;
-  color: var(--background-color);
+  color: #e8f1f8;
   z-index: 1;
   min-height: 500px;
 }
@@ -101,7 +101,7 @@ header::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(75, 100, 168, 0.4);
+  background-color: rgba(75, 100, 168, 0.3);
   z-index: -1;
 }
 
@@ -195,8 +195,9 @@ header p {
   width: 300px;
   padding: 20px;
   margin: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
-  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  border-radius: 5px;
+  background-color: #f1f5f7;
 }
 
 .member img {
